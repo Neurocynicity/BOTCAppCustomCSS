@@ -1,0 +1,68 @@
+/* BEGIN Dark mode */
+
+/* Edit the good/ evil team colours here */
+:root {
+  --dark-mode-good-colour: #52ceff;
+  --dark-mode-evil-colour: #ff262b;
+  --dark-mode-loric-colour: #819c49;
+  --dark-mode-fabled-colour: #ffd760;
+}
+
+/* Remove background images */
+.tab .container:not([data-v-0acf96d0]):not([data-v-d704e60f]),
+.token .ability {
+  /* using !important is bad practise, but overrides the inline styles 😔 */
+  background: black !important;
+}
+
+/* Set positioned character sheet to 15% transparent when not hidden */
+.token:hover .ability[data-v-52a03550],
+.tab .container:not(.hidden) {
+  opacity: 0.85;
+}
+
+/* Set positioned character sheet's uncoloured text to white */
+.tab .container .ability,
+.tab .container .team-special .name,
+.tab .container .reminder,
+li .name small[data-v-0c1e09ad],
+.token .ability[data-v-52a03550] {
+  color: white;
+}
+
+/* Subtly lighten text colours */
+.token.team-townsfolk .ability b[data-v-52a03550],
+.token.team-outsider .ability b[data-v-52a03550],
+.townsfolk .name[data-v-3c7c5d00],
+.outsider .name[data-v-3c7c5d00],
+.team.jinxes .name .townsfolk[data-v-3c7c5d00],
+.team.jinxes .name .outsider[data-v-3c7c5d00],
+li.team-townsfolk .name[data-v-0c1e09ad],
+li.team-outsider .name[data-v-0c1e09ad] {
+  color: var(--dark-mode-good-colour);
+}
+
+.token.team-minion .ability b[data-v-52a03550],
+.token.team-demon .ability b[data-v-52a03550],
+.minion .name[data-v-3c7c5d00],
+.demon .name[data-v-3c7c5d00],
+.team.jinxes .name .minion[data-v-3c7c5d00],
+.team.jinxes .name .demon[data-v-3c7c5d00],
+li.team-minion .name[data-v-0c1e09ad],
+li.team-demon .name[data-v-0c1e09ad] {
+  color: var(--dark-mode-evil-colour);
+}
+
+.token.team-fabled .ability b[data-v-52a03550],
+.fabled .name[data-v-3c7c5d00],
+li.team-fabled .name[data-v-0c1e09ad] {
+  color: var(--dark-mode-fabled-colour);
+}
+
+.token.team-loric .ability b[data-v-52a03550],
+.loric .name[data-v-3c7c5d00],
+li.team-loric .name[data-v-0c1e09ad] {
+  color: var(--dark-mode-loric-colour);
+}
+
+/* END Dark mode */

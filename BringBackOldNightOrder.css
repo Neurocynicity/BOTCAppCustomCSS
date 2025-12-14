@@ -1,0 +1,56 @@
+/* BEGIN restyling night order to old style */
+
+/* Edit the good/ evil team colours here */
+:root {
+  --dark-mode-good-colour: #52ceff;
+  --dark-mode-evil-colour: #ff262b;
+  --dark-mode-loric-colour: #819c49;
+  --dark-mode-fabled-colour: #ffd760;
+}
+
+/* Remove night order sheet's background image */
+.tab.night-order .container {
+  /* using !important is bad practise, but overrides the inline styles 😔 */
+  background: black !important;
+}
+
+/* Set night order to 15% transparent when not hidden */
+.tab.night-order .container:not(.hidden) {
+  opacity: 0.85;
+}
+
+/* Set uncoloured text to white */
+.tab.night-order .container .ability,
+.tab.night-order .container .team-special .name,
+.tab.night-order .container .reminder,
+li .name small[data-v-0c1e09ad] {
+  color: white;
+}
+
+/* Subtly lighten night order's text colours */
+li.team-townsfolk .name[data-v-0c1e09ad],
+li.team-outsider .name[data-v-0c1e09ad] {
+  color: var(--dark-mode-good-colour);
+}
+
+li.team-minion .name[data-v-0c1e09ad],
+li.team-demon .name[data-v-0c1e09ad] {
+  color: var(--dark-mode-evil-colour);
+}
+
+li.team-fabled .name[data-v-0c1e09ad] {
+  color: var(--dark-mode-fabled-colour);
+}
+
+li.team-loric .name[data-v-0c1e09ad] {
+  color: var(--dark-mode-loric-colour);
+}
+
+/* END restyling night order to old style */
+
+/* Makes both night sheets appear/ disappear together when they're undocked and toggled on/off */
+.night-order.tab.positioned+.night-order.tab>.container.positioned.draggable,
+.night-order.tab:has(+ .night-order.tab.positioned)>.container.positioned.draggable {
+  opacity: .85;
+  pointer-events: all;
+}

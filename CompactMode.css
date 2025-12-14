@@ -1,0 +1,31 @@
+/* BEGIN Compact half expanded character sheet */
+
+/* Make ability text size not affect layout when hidden */
+.character-mid ul li .ability[data-v-3c7c5d00] {
+    font-size: 0px;
+    flex-shrink: 1;
+}
+
+/* Shrink icon size */
+.character-mid .icon[data-v-3c7c5d00] {
+    width: min(4vw, 50px);
+}
+
+/* Shrink team text */
+.character-mid .team aside {
+    font-size: 50%;
+    padding: 0;
+}
+
+/* Adds more space so you can fit all of a regular script at once */
+.character-mid .container {
+    padding-bottom: 25px;
+    padding-top: 10px;
+}
+
+/* Top align script tab */
+aside.tab[data-v-3c7c5d00] {
+    align-items: baseline;
+}
+
+/* END Compact half expanded character sheet */

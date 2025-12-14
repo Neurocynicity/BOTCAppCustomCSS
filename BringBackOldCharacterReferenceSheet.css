@@ -1,0 +1,50 @@
+/* BEGIN Old character reference sheet */
+
+/* Edit the good/ evil team colours here */
+:root {
+    --dark-mode-good-colour: #52ceff;
+    --dark-mode-evil-colour: #ff262b;
+    --dark-mode-loric-colour: #819c49;
+    --dark-mode-fabled-colour: #ffd760;
+}
+
+/* Remove positioned character sheet's background image */
+.tab.character .container.positioned {
+    /* using !important is bad practise, but overrides the inline styles 😔 */
+    background: black !important;
+}
+
+/* Set positioned character sheet to 15% transparent when not hidden */
+.tab.character .container.positioned:not(.hidden) {
+    opacity: 0.85;
+}
+
+/* Set positioned character sheet's text colour white */
+.tab.character .container.positioned .ability[data-v-3c7c5d00] {
+    color: white;
+}
+
+/* Subtly lighten text colours */
+.tab.character .container.positioned .townsfolk .name,
+.tab.character .container.positioned .outsider .name,
+.tab.character .container.positioned .jinxes .name .townsfolk,
+.tab.character .container.positioned .jinxes .name .outsider {
+    color: var(--dark-mode-good-colour);
+}
+
+.tab.character .container.positioned .minion .name,
+.tab.character .container.positioned .demon .name,
+.tab.character .container.positioned .jinxes .name .minion,
+.tab.character .container.positioned .jinxes .name .demon {
+    color: var(--dark-mode-evil-colour);
+}
+
+.tab.character .container.positioned .fabled .name {
+    color: var(--dark-mode-fabled-colour);
+}
+
+.tab.character .container.positioned .loric .name {
+    color: var(--dark-mode-lorid-colour);
+}
+
+/* END Old character reference sheet */

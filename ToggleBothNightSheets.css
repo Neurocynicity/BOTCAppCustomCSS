@@ -1,0 +1,6 @@
+/* Makes both night sheets appear/ disappear together when they're undocked and toggled on/off */
+.night-order.tab.positioned+.night-order.tab>.container.positioned.draggable,
+.night-order.tab:has(+ .night-order.tab.positioned)>.container.positioned.draggable {
+  opacity: 1;
+  pointer-events: all;
+}

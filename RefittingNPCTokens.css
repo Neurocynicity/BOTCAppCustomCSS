@@ -1,0 +1,47 @@
+/* BEGIN better fitting NPC Tokens*/
+
+.container ul.tokens[data-v-d704e60f]>.section {
+  align-items: flex-start;
+}
+
+.container.dragging ul.tokens>li[data-v-d704e60f],
+.container.positioned ul.tokens>li[data-v-d704e60f] {
+  height: 100%;
+  width: auto;
+}
+
+@container (orientation: portrait) {
+
+  .container.dragging ul.tokens>li[data-v-d704e60f],
+  .container.positioned ul.tokens>li[data-v-d704e60f] {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* remove padding from NPC token window */
+.container[data-v-d704e60f] section {
+  padding: 0;
+}
+
+/* Left align NPC tokens */
+.container ul.tokens[data-v-d704e60f] {
+  align-items: start;
+  justify-content: start;
+}
+
+/* Top align script tab */
+aside.tab[data-v-3c7c5d00] {
+  align-items: baseline;
+}
+
+/* show all token overflow 
+THIS DISABLES RESIZING ON ALL RESIZABLE ELEMENTS
+COMMENT THIS OUT TO RESIZE ELEMENTS WITH MY CHANGES,
+THEN PUT IT BACK TO LOCK IT IN PLACE AND SHOW THE OVERFLOW
+put a space between this end comment to comment it out -> * /
+.container.positioned[data-v-0eabeed9]{
+  overflow: visible;
+}
+
+/* END better fitting NPC Tokens*/
