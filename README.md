@@ -3,7 +3,7 @@ Some custom CSS I use to edit the look/ functionality of [botc.app](botc.app)
 
 ## Docked Tabs
 
-Some of these only affect tabs when they're "undocked."  By default the tabs will be "docked," meaning the're attached the side of the screen.
+Some of these only affect tabs when they're "undocked."  By default the tabs will be "docked," meaning they're attached the side of the screen.
 
 To undock a tab, ensure you have "Allow Side Tabs Moving" setting enabled under the "General" tab at the bottom of the settings. (the checkbox looks like a yellow dragging cursor when enabled)
 
