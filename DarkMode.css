@@ -24,6 +24,7 @@
 /* Set positioned character sheet's uncoloured text to white */
 .tab .container .ability,
 .tab .container .team-special .name,
+.container .title[data-v-3c7c5d00],
 .tab .container .reminder,
 .container.positioned .team .name,
 li .name small[data-v-0c1e09ad],
