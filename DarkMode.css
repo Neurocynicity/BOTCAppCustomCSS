@@ -15,13 +15,13 @@
   background: black !important;
 }
 
-/* Set positioned character sheet to 15% transparent when not hidden */
+/* Set black backgrounds to 15% transparent when not hidden */
 .token:hover .ability[data-v-52a03550],
-.tab .container:not(.hidden) {
+.tab .container:not(.hidden):not([data-v-0acf96d0]):not([data-v-d704e60f]) {
   opacity: 0.85;
 }
 
-/* Set positioned character sheet's uncoloured text to white */
+/* Set uncoloured text to white */
 .tab .container .ability,
 .tab .container .team-special .name,
 .container .title[data-v-3c7c5d00],
@@ -32,7 +32,7 @@ li .name small[data-v-0c1e09ad],
   color: white;
 }
 
-/* Subtly lighten positioned character sheet's text colours */
+/* Subtly lighten text colours */
 .token.team-townsfolk .ability b[data-v-52a03550],
 .token.team-outsider .ability b[data-v-52a03550],
 .team.townsfolk .name[data-v-3c7c5d00],
