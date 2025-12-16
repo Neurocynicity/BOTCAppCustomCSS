@@ -21,21 +21,21 @@
   opacity: 0.85;
 }
 
- /* Set positioned character sheet's uncoloured text to white */
+/* Set positioned character sheet's uncoloured text to white */
 .tab .container .ability,
 .tab .container .team-special .name,
 .tab .container .reminder,
-.container.positioned .team .name[data-v-3c7c5d00],
+.container.positioned .team .name,
 li .name small[data-v-0c1e09ad],
 .token .ability[data-v-52a03550] {
   color: white;
 }
 
-/* Subtly lighten text colours */
+/* Subtly lighten positioned character sheet's text colours */
 .token.team-townsfolk .ability b[data-v-52a03550],
 .token.team-outsider .ability b[data-v-52a03550],
-.townsfolk .name[data-v-3c7c5d00],
-.outsider .name[data-v-3c7c5d00],
+.team.townsfolk .name[data-v-3c7c5d00],
+.team.outsider .name[data-v-3c7c5d00],
 .team.jinxes .name .townsfolk[data-v-3c7c5d00],
 .team.jinxes .name .outsider[data-v-3c7c5d00],
 li.team-townsfolk .name[data-v-0c1e09ad],
@@ -45,8 +45,8 @@ li.team-outsider .name[data-v-0c1e09ad] {
 
 .token.team-minion .ability b[data-v-52a03550],
 .token.team-demon .ability b[data-v-52a03550],
-.minion .name[data-v-3c7c5d00],
-.demon .name[data-v-3c7c5d00],
+.team.minion .name[data-v-3c7c5d00],
+.team.demon .name[data-v-3c7c5d00],
 .team.jinxes .name .minion[data-v-3c7c5d00],
 .team.jinxes .name .demon[data-v-3c7c5d00],
 li.team-minion .name[data-v-0c1e09ad],
