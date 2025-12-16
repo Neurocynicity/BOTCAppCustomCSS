@@ -20,6 +20,7 @@
 }
 
 /* Set positioned character sheet's text colour white */
+.container.positioned .team .name[data-v-3c7c5d00],
 .tab.character .container.positioned .ability[data-v-3c7c5d00] {
     color: white;
 }

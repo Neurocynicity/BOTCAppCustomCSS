@@ -21,10 +21,11 @@
   opacity: 0.85;
 }
 
-/* Set positioned character sheet's uncoloured text to white */
+ /* Set positioned character sheet's uncoloured text to white */
 .tab .container .ability,
 .tab .container .team-special .name,
 .tab .container .reminder,
+.container.positioned .team .name[data-v-3c7c5d00],
 li .name small[data-v-0c1e09ad],
 .token .ability[data-v-52a03550] {
   color: white;
